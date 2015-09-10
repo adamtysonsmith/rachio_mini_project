@@ -1,0 +1,103 @@
+body {
+    background: url('buy-page-bg.png') no-repeat center fixed;
+    background-size: cover;
+}
+
+.content-group {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    margin-left: 50%;
+    margin-top: 100px;
+}
+.title {
+    font-weight: 100;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    color: #00a6e4;
+    margin: 0px;
+}
+.rebate-button {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background-color: #b0bec5;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 10px;
+}
+
+/* Product List Styles */
+.product-list {
+    width: 800px;
+    list-style: none;
+    padding-left: 0;
+}
+.product-list li {
+    position: relative;
+    border-top: 1px solid #dedede;
+    padding: 20px 0px;
+}
+.product-name {
+    font-size: 2.8rem;
+    color: #525252;
+    margin: 0;
+}
+.product-price {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: #a5a5a5;
+    margin: 5px 0px;
+}
+.product-description {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #a5a5a5;
+    margin: 0;
+}
+.product-button-container {
+    float: right;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 150px;
+    height: 75px;
+}
+.product-button {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: #b0bec5;
+    color: white;
+    border-radius: 100%;
+    padding: 5px 5px;
+}
+.product-quantity {
+    position: absolute;
+    top: -10px;
+    font-size: 3rem;
+    left: 60px;
+}
+.subtract {
+    left: 0px;
+}
+.add {
+    right: 0px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 850px) {
+    body {
+        background: url('buy-page-mobile-bg.jpg') no-repeat left fixed;
+        background-size: cover;
+    }
+}
