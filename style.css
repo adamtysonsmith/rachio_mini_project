@@ -1,5 +1,8 @@
+html {
+    font-size: 100%;
+}
 body {
-    background: url('buy-page-bg.png') no-repeat center fixed;
+    background: url('img/buy-page-bg.png') no-repeat center fixed;
     background-size: cover;
 }
 
@@ -29,10 +32,14 @@ body {
     border: none;
     padding: 5px 10px;
 }
+.rebate-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 /* Product List Styles */
 .product-list {
-    width: 800px;
+    width: 90%;
     list-style: none;
     padding-left: 0;
 }
@@ -80,6 +87,10 @@ body {
     border-radius: 100%;
     padding: 5px 5px;
 }
+.product-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 .product-quantity {
     position: absolute;
     top: -10px;
@@ -95,9 +106,116 @@ body {
 
 
 /* Media Queries */
-@media screen and (max-width: 850px) {
+@media (max-width: 1625px) {
+    html { 
+        font-size: 85%; 
+    }
+    .product-button {
+        width: 25px;
+        height: 25px;
+    }
+    .product-button-container {
+        width: 120px;
+    }
+    .product-quantity {
+        left: 50px;
+    }
+}
+@media (max-width: 1400px) {
+    html { 
+        font-size: 70%; 
+    }
+    .product-list li {
+        padding: 30px 0px;
+    }
+    .product-button {
+        width: 20px;
+        height: 20px;
+    }
+    .product-button-container {
+        width: 100px;
+    }
+    .product-quantity {
+        top: -5px;
+        left: 40px;
+    }
+}
+@media (max-width: 1200px) {
+    html { 
+        font-size: 60%; 
+    }
+    .product-list li {
+        padding: 35px 0px;
+    }
+    .product-button {
+        width: 18px;
+        height: 18px;
+    }
+    .product-button-container {
+        width: 90px;
+    }
+    .product-quantity {
+        top: -5px;
+        left: 35px;
+    }
+}
+@media (max-width: 1000px) {
+    html { 
+        font-size: 50%; 
+    }
+    .product-list li {
+        padding: 40px 0px;
+    }
+    .product-button {
+        width: 16px;
+        height: 16px;
+    }
+    .product-button-container {
+        width: 80px;
+    }
+    .product-quantity {
+        top: -3px;
+        left: 30px;
+    }
+}
+
+/* Mobile Breakpoints */
+@media (max-width: 850px) {
+    /* Use alternate bg */
     body {
-        background: url('buy-page-mobile-bg.jpg') no-repeat left fixed;
+        background: url('img/buy-page-mobile-bg.jpg') no-repeat left;
         background-size: cover;
+    }
+    html { 
+        font-size: 60%; 
+    }
+    .content-group {
+        margin-top: 450px;
+        margin-left: 42%;
+    }
+    .product-quantity {
+        left: 32px;
+    }
+}
+@media (max-width: 700px) {
+    /* Use alternate bg */
+    body {
+        background: none;
+        background-color: #f1f1f1;
+    }
+    .content-group {
+        margin-top: 50px;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 700px) {
+    html { 
+        font-size: 50%; 
+    }
+    .rebate-button {
+        margin-bottom: 55px;
+    }
+    .product-list {
+        width: 100%;
     }
 }
